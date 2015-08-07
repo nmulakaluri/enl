@@ -1,0 +1,56 @@
+[
+{
+"type": "org",
+"val": "auditor",
+"modified": 1428904819852,
+"modified_user": "User:global:13814000-1dd2-11b2-8080-808080808080:13814000-1dd2-11b2-8080-808080808080",
+"names": {
+"": "Auditor"
+}
+},
+{
+"type": "org",
+"val": "contractor",
+"modified": 1428904819852,
+"modified_user": "User:global:13814000-1dd2-11b2-8080-808080808080:13814000-1dd2-11b2-8080-808080808080",
+"names": {
+"": "Contractor"
+}
+},
+{
+"type": "org",
+"val": "customer",
+"modified": 1428904819852,
+"modified_user": "User:global:13814000-1dd2-11b2-8080-808080808080:13814000-1dd2-11b2-8080-808080808080",
+"names": {
+"": "Customer"
+}
+},
+{
+"type": "org",
+"val": "installer",
+"modified": 1428904819852,
+"modified_user": "User:global:13814000-1dd2-11b2-8080-808080808080:13814000-1dd2-11b2-8080-808080808080",
+"names": {
+"": "Installer"
+}
+},
+{
+"type": "org",
+"val": "manager",
+"modified": 1428904819852,
+"modified_user": "User:global:13814000-1dd2-11b2-8080-808080808080:13814000-1dd2-11b2-8080-808080808080",
+"names": {
+"": "Manager"
+}
+},
+{
+"type": "org",
+"val": "vendor",
+"modified": 1428904819852,
+"modified_user": "User:global:13814000-1dd2-11b2-8080-808080808080:13814000-1dd2-11b2-8080-808080808080",
+"names": {
+"": "Vendor"
+}
+}
+]

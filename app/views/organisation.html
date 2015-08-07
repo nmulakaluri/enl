@@ -1,0 +1,68 @@
+<h1>Organisation</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+
+<div class="well">
+<div class="row">
+  <div class="col-xs-4">
+    
+    <select class="form-control"
+        ng-model="filterType">
+        <option value="" label="Select Type" selected></option>
+         <option ng-repeat="type in orgTypes" value="{{type.val}}" label="{{type.val}}" ></option>
+	</select>
+    
+    
+    
+    
+  </div>
+  <div class="col-xs-4">
+    <input type="text" class="form-control" ng-model="filterValue"/>
+  </div>
+  <div class="col-xs-4">
+   <button type="button" class="btn btn-primary btn-sm">Filter Details</button>
+  </div>
+</div>
+	
+</div>
+
+{{filterType}}
+
+
+  <accordion close-others="oneAtATime">
+    
+    <accordion-group  ng-repeat="org in allOrganisations.objs | filter:filterValue">
+     <accordion-heading> 
+     	<button type="button" class="btn btn-primary btn-sm" ng-click="org.status.open=!org.status.open">
+        	<span class="glyphicon glyphicon-plus" aria-hidden="true" ng-class="{'glyphicon-minus': org.status.open, 'glyphicon-plus': !org.status.open}"></span>
+        </button>
+        {{org.name}}
+        <button type="button" class="btn btn-primary btn-sm pull-right">View Details</button>
+     </accordion-heading>
+      <table class="table table-striped">
+ <thead> <tr>
+  	<th></th>
+    <th>Organization Name</th> 
+    <th>Action</th> 
+  </tr>
+  </thead>
+  <tr ng-repeat="org in allOrganisations.objs | filter:filterValue">
+  		<td></td>
+        <td>{{org.name}}</td>
+        <td><!--<button type="button" class="btn btn-primary btn-sm">View Details</button>--></td>
+   </tr>
+</table>
+    </accordion-group>
+   
+    
+  </accordion>
+
+
+
+<nav>
+  <ul class="pagination">
+   
+    <li ng-repeat="org in allOrganisations.objs"><a href="#">{{$index+1}} <span class="sr-only">(current)</span></a></li>
+   
+  </ul>
+</nav>
+
